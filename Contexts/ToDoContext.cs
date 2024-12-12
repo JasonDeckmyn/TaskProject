@@ -7,14 +7,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace TaskProject.Contexts
 {
-    public class ToDoContext : DbContext
+    public class TodoContext : DbContext
     {
 
-        public ToDoContext(DbContextOptions<ToDoContext> options) : base(options)
+        public TodoContext(DbContextOptions<TodoContext> options) : base(options)
         {
             
         }
 
-        public DbSet<ToDo> Todos { get; set; }
+        public DbSet<Todo> Todos { get; set; }
     }
 }
