@@ -5,17 +5,10 @@ using TaskProject.Repostitories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//
-//
-// VIDEO API ENDED 1:12:06
-//
-//
-
-
 // Add services to the container.
 builder.Services.AddControllers();
 
-// Configure Swagger/OpenAPI (use AddSwaggerGen for OpenAPI support)
+// Configure Swagger/OpenAPI (add Swagger services here)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -27,16 +20,16 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-builder.Services.AddScoped<IRepo, MysqlRepo>(); // MockRepo can be switched with MySQL later on
+// Register other services
+builder.Services.AddScoped<IRepo, MysqlRepo>();
 
-// Ensure the configuration is loaded
+// Configure EF Core with MySQL
 var configuration = builder.Configuration;
 string _connectionstring = configuration.GetConnectionString("DefaultConnection");
-
 builder.Services.AddDbContext<TodoContext>(options =>
     options.UseMySql(_connectionstring, ServerVersion.AutoDetect(_connectionstring)));
 
-// Add AutoMapper
+// Add AutoMapper (if applicable)
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
@@ -44,7 +37,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    // Enable Swagger UI in development mode
+    // Add Swagger middleware here
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
@@ -54,6 +47,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Map controllers
 app.MapControllers();
 
 app.Run();

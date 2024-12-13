@@ -10,5 +10,10 @@ namespace TaskProject.Repostitories
     {
         IEnumerable<Todo> GetAllTodo();
         Todo GetToDoById(int id);
+
+        void AddTodo(Todo t);
+        void UpdateTodo(Todo t);
+        void SaveChanges();
+        void DeleteTodo(Todo t);
     }
 }

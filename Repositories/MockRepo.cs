@@ -18,6 +18,16 @@ namespace TaskProject.Repostitories
             todolist.Add(new Todo(){ Id = 4, Title = "Learn Azure", Urgency = "Low" });
         }
 
+        public void AddTodo(Todo t)
+        {
+            todolist.Add(t);
+        }
+
+        public void DeleteTodo(Todo t)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Todo> GetAllTodo()
         {
             return todolist;
@@ -27,6 +37,16 @@ namespace TaskProject.Repostitories
         {
            Todo _todo = todolist.FirstOrDefault<Todo>(t => t.Id == id);
            return _todo;
+        }
+
+        public void SaveChanges()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateTodo(Todo t)
+        {
+            throw new NotImplementedException();
         }
     }
 }

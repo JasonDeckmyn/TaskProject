@@ -13,6 +13,8 @@ namespace TaskProject.Mappings
         public TodoProfile()
         {
             CreateMap<Todo, TodoReadDto>();
+            CreateMap<TodoWriteDto, Todo>();
+            CreateMap<TodoUpdateDto, Todo>();
         }
     }
 }
