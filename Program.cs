@@ -1,3 +1,4 @@
+using aspnet.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models; // Required for Swagger/OpenAPI
 using TaskProject.Contexts;
@@ -34,6 +35,13 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<TodoContext>();
+    dbContext.Database.Migrate();
+    SeedDB(dbContext);
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -51,3 +59,21 @@ app.UseHttpsRedirection();
 app.MapControllers();
 
 app.Run();
+
+
+void SeedDB(TodoContext context)
+{
+    if(!context.Todos.Any())
+    {
+       var todos = new List<Todo>
+        {
+            new Todo { Title = "Learn C#", Description = "Learn the basics of C#", Urgency = UrgencyLevel.High },
+            new Todo { Title = "Learn ASP.NET", Description = "Learn how to build web applications with ASP.NET", Urgency = UrgencyLevel.Medium },
+            new Todo { Title = "Learn EF Core", Description = "Learn how to use Entity Framework Core", Urgency = UrgencyLevel.High },
+            new Todo { Title = "Learn Azure", Description = "Learn how to deploy applications to Azure", Urgency = UrgencyLevel.Low }
+        };
+
+        context.Todos.AddRange(todos);
+        context.SaveChanges();
+    }
+}

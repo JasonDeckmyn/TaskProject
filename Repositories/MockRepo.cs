@@ -12,10 +12,10 @@ namespace TaskProject.Repostitories
 
         public MockRepo()
         {
-            todolist.Add(new Todo(){ Id = 1, Title = "Learn C#", Urgency = "High" });
-            todolist.Add(new Todo(){ Id = 2, Title = "Learn ASP.NET", Urgency = "Medium" });
-            todolist.Add(new Todo(){ Id = 3, Title = "Learn EF Core", Urgency = "High" });
-            todolist.Add(new Todo(){ Id = 4, Title = "Learn Azure", Urgency = "Low" });
+            // todolist.Add(new Todo(){ Id = 1, Title = "Learn C#", Urgency = "High" });
+            // todolist.Add(new Todo(){ Id = 2, Title = "Learn ASP.NET", Urgency = "Medium" });
+            // todolist.Add(new Todo(){ Id = 3, Title = "Learn EF Core", Urgency = "High" });
+            // todolist.Add(new Todo(){ Id = 4, Title = "Learn Azure", Urgency = "Low" });
         }
 
         public void AddTodo(Todo t)

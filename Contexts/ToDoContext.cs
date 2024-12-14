@@ -16,5 +16,14 @@ namespace TaskProject.Contexts
         }
 
         public DbSet<Todo> Todos { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Todo>()
+                .Property(t => t.IsComplete)
+                .HasDefaultValue(false);
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
