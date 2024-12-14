@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskViewer.Views.AddTodoPage"
+             Title="Add New Todo">
+
+    <VerticalStackLayout Padding="30, 0" Spacing="25">
+        <Label 
+            Text="Add new todo"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry Placeholder="Title" Text="{Binding NewTodo.Title}" />
+        <Entry Placeholder="Description" Text="{Binding NewTodo.Description}" />
+        <Picker Title="Urgency" ItemsSource="{Binding UrgencyLevels}" SelectedItem="{Binding NewTodo.Urgency}" />
+
+        <Button Text="Save" Command="{Binding SaveTodoCommand}" />
+    </VerticalStackLayout>
+</ContentPage>
