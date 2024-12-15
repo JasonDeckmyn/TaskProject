@@ -12,8 +12,6 @@ namespace TaskProject.dto
         public string Title { get; set; }
         public string Description { get; set; }
         public UrgencyLevel Urgency { get; set; }
-
-        
-        // public string Urgency { get; set; }
+        public bool IsComplete { get; set; }
     }
 }
