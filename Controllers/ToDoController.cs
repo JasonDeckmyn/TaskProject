@@ -33,15 +33,13 @@ namespace aspnet.Controllers
             return Ok(_map.Map<TodoReadDto>(_repo.GetToDoById(id)));
         }
 
-        [HttpPost] // POST api/todo
+        [HttpPost]
         public ActionResult AddTodo(TodoWriteDto t)  
         {
             var todo = _map.Map<Todo>(t);
 
             _repo.AddTodo(todo);
             _repo.SaveChanges();
-
-            // return Ok();
 
             // REST API for response 201
             return CreatedAtRoute(nameof(GetTodoById), new {Id = todo.Id}, todo);
