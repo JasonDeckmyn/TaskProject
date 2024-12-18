@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|c:\\users\\jason\\downloads\\taskviewermaui\\taskviewer\\services\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|solutionrelative:taskviewer\\services\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|c:\\users\\jason\\downloads\\taskviewermaui\\taskviewer\\views\\edittodopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|solutionrelative:taskviewer\\views\\edittodopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|c:\\users\\jason\\downloads\\taskviewermaui\\taskviewer\\views\\edittodopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|solutionrelative:taskviewer\\views\\edittodopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|c:\\users\\jason\\downloads\\taskviewermaui\\taskviewer\\views\\addtodopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|solutionrelative:taskviewer\\views\\addtodopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|c:\\users\\jason\\downloads\\taskviewermaui\\taskviewer\\views\\addtodopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|solutionrelative:taskviewer\\views\\addtodopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|c:\\users\\jason\\downloads\\taskviewermaui\\taskviewer\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|solutionrelative:taskviewer\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|c:\\users\\jason\\downloads\\taskviewermaui\\taskviewer\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|solutionrelative:taskviewer\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|c:\\users\\jason\\downloads\\taskviewermaui\\taskviewer\\platforms\\android\\androidmanifest.xml||{A4B51DF8-501B-45AD-A022-1A0D18A2B7B0}",
+      "RelativeMoniker": "D:0:0:{8538F278-B6A9-4E97-A95A-A14919ED3D79}|TaskViewer\\TaskViewer.csproj|solutionrelative:taskviewer\\platforms\\android\\androidmanifest.xml||{A4B51DF8-501B-45AD-A022-1A0D18A2B7B0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 344,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TodoService.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\Services\\TodoService.cs",
+              "RelativeDocumentMoniker": "TaskViewer\\Services\\TodoService.cs",
+              "ToolTip": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\Services\\TodoService.cs",
+              "RelativeToolTip": "TaskViewer\\Services\\TodoService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T19:59:26.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "TaskViewer\\Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "TaskViewer\\Platforms\\Android\\AndroidManifest.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-12-17T19:58:30.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "TaskViewer\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\MainPage.xaml.cs",
+              "RelativeToolTip": "TaskViewer\\MainPage.xaml.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:03:11.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\MainPage.xaml",
+              "RelativeDocumentMoniker": "TaskViewer\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\MainPage.xaml",
+              "RelativeToolTip": "TaskViewer\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-14T14:56:31.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddTodoPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\Views\\AddTodoPage.xaml.cs",
+              "RelativeDocumentMoniker": "TaskViewer\\Views\\AddTodoPage.xaml.cs",
+              "ToolTip": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\Views\\AddTodoPage.xaml.cs",
+              "RelativeToolTip": "TaskViewer\\Views\\AddTodoPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T13:29:37.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddTodoPage.xaml",
+              "DocumentMoniker": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\Views\\AddTodoPage.xaml",
+              "RelativeDocumentMoniker": "TaskViewer\\Views\\AddTodoPage.xaml",
+              "ToolTip": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\Views\\AddTodoPage.xaml",
+              "RelativeToolTip": "TaskViewer\\Views\\AddTodoPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-16T13:22:52.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditTodoPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\Views\\EditTodoPage.xaml.cs",
+              "RelativeDocumentMoniker": "TaskViewer\\Views\\EditTodoPage.xaml.cs",
+              "ToolTip": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\Views\\EditTodoPage.xaml.cs",
+              "RelativeToolTip": "TaskViewer\\Views\\EditTodoPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T12:52:43.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditTodoPage.xaml",
+              "DocumentMoniker": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\Views\\EditTodoPage.xaml",
+              "RelativeDocumentMoniker": "TaskViewer\\Views\\EditTodoPage.xaml",
+              "ToolTip": "C:\\Users\\jason\\Downloads\\TaskViewerMAUI\\TaskViewer\\Views\\EditTodoPage.xaml",
+              "RelativeToolTip": "TaskViewer\\Views\\EditTodoPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-16T12:51:46.611Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

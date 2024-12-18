@@ -1,0 +1,11 @@
+# Exclude folder
+TaskViewerMAUI/TaskViewer/bin/
+TaskViewerMAUI/TaskViewer/obj/
+TaskViewerMAUI/TaskViewer/Platforms/
+TaskViewerMAUI/TaskViewer/Properties/
+TaskViewerMAUI/TaskViewer/Resources/
+API/bin/
+
+# Include folders in exclude folder
+!TaskViewerMAUI/TaskViewer/Platforms/Android/
+!TaskViewerMAUI/TaskViewer/Platforms/Windows/

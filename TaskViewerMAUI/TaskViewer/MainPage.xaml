@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TaskViewer"
+             x:Class="TaskViewer.MainPage"
+             Title="Task Viewer">
+
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <VerticalStackLayout
+                Padding="30,0"
+                Spacing="25">
+
+                <Label
+                    Text="To do's"
+                    Style="{StaticResource Headline}"
+                    SemanticProperties.HeadingLevel="Level1" />
+
+                <Label
+                    Text="Below you can find your todos that you need to complete. You can also add todos, remove todos and change the todos."
+                    Style="{StaticResource SubHeadline}"
+                    SemanticProperties.HeadingLevel="Level2" />
+
+                <CollectionView ItemsSource="{Binding Todos}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="10" ColumnDefinitions="Auto,*,Auto,Auto,Auto">
+                                <ImageButton Grid.Column="0" WidthRequest="30" HeightRequest="30" Margin="10,0" VerticalOptions="Center" Clicked="OnEditTodoClicked" CommandParameter="{Binding Id}">
+                                    <ImageButton.Source>
+                                        <FontImageSource Glyph="&#xE70F;" FontFamily="Segoe MDL2 Assets" Size="30" Color="{AppThemeBinding Light=Black, Dark=White}"/>
+                                    </ImageButton.Source>
+                                </ImageButton>
+                                <StackLayout Grid.Column="1">
+                                    <Label Text="{Binding Title}" FontSize="20"/>
+                                    <Label Text="{Binding Description}" FontSize="14"/>
+                                    <Label Text="{Binding Urgency}" FontSize="14"/>
+                                </StackLayout>
+                                <Label Grid.Column="2" Text="✔" FontSize="20" TextColor="Green" Margin="10,0" VerticalOptions="Center">
+                                    <Label.Triggers>
+                                        <DataTrigger TargetType="Label" Binding="{Binding IsComplete}" Value="False">
+                                            <Setter Property="IsVisible" Value="False"/>
+                                        </DataTrigger>
+                                    </Label.Triggers>
+                                </Label>
+                                <Button Grid.Column="3" Text="Toggle Status" Clicked="OnToggleStatusClicked" CommandParameter="{Binding Id}" WidthRequest="100" HeightRequest="30" Margin="10,0" VerticalOptions="Center"/>
+                                <Button Grid.Column="4" Text="Remove" Command="{Binding Source={RelativeSource AncestorType={x:Type local:MainPage}}, Path=BindingContext.RemoveTodoCommand}" CommandParameter="{Binding Id}" WidthRequest="80" HeightRequest="30" Margin="10,0" VerticalOptions="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Button
+            Text="+"
+            BackgroundColor="#3b82f6"
+            TextColor="White"
+            FontSize="30"
+            CornerRadius="25"
+            WidthRequest="50"
+            HeightRequest="50"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="0.97,0.97,AutoSize,AutoSize"
+            Clicked="OnAddTodoClicked"/>
+    </AbsoluteLayout>
+
+</ContentPage>
